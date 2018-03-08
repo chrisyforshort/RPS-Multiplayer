@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <title>RPS</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Rock, Paper, Scissors: Online Multiplayer</h1>
+                <p class="lead">Please enter a username to start!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-md-3 player">
+            <div class="border playerDiv">
+                <div class="topborder" id="player1">Player 1</div>
+                <div class="player p1"></div>
+            </div>
+        </div>
+        <div class="col-sm-4 midDiv">
+            <div class="border usernameDiv">
+                <div class="topborder">Enter a Username Here!</div>
+                <div class="inputDiv">
+                    <input type="text" class="form-control" id="userInput">
+                    <button type="button" class="btn btn-secondary" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 player">
+            <div class="border playerDiv">
+                <div class="topborder">Player 2</div>
+                <div class="player p2"></div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 chat">
+                <form>
+                    <div class="border">
+                        <div class="topborder">Chat Box</div>
+                        <div id="chatBox" class="border"></div>
+                        <div class="inputDiv">
+                            <input type="text" class="form-control" id="chatInput">
+                            <button type="button" class="btn btn-secondary" id="send">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
